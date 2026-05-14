@@ -1,0 +1,6 @@
+export type CaseItem = { id:string; caseName:string; parties:string; country:string; status:'ongoing'|'settled'|'dismissed'|'appeal'|'legislation'; date:string; sector:string; explanation:string; tags:string[]; updated:string };
+export const caseItems: CaseItem[] = [
+  { id:'c1', caseName:'Illustrators Guild v. SynthVision', parties:'Illustrators Guild / SynthVision Labs', country:'US', status:'ongoing', date:'2026-02-02', sector:'Image Generation', explanation:'Claims center on unauthorized ingestion of protected portfolios in training corpora.', tags:['training','images'], updated:'2026-05-10' },
+  { id:'c2', caseName:'LyricWorks v. PromptAudio', parties:'LyricWorks Collective / PromptAudio', country:'UK', status:'appeal', date:'2025-11-19', sector:'Music', explanation:'Dispute focuses on lyric similarity thresholds and attribution in generated songs.', tags:['lyrics','attribution'], updated:'2026-05-13' },
+  { id:'c3', caseName:'ScreenRights v. MotionGen', parties:'ScreenRights / MotionGen AI', country:'US', status:'settled', date:'2026-01-12', sector:'Film', explanation:'Settlement established a paid archive licensing program for model retraining.', tags:['licensing','film'], updated:'2026-05-06' }
+];
